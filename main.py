@@ -8,8 +8,12 @@ from sklearn.cluster import DBSCAN
 import io
 
 # Load the CSV data (make sure to upload the correct file)
-st.title("Shop Grouping and Clustering Tool")
-st.markdown("Upload your CSV data with GPS coordinates for shop locations.")
+st.title("Enhanced GPS Clustering Tool")
+st.subheader("Upload your GPS data and visualize clusters on the map")
+st.markdown("### Instructions:")
+st.markdown("1. Upload a CSV file containing GPS coordinates in a column named 'GPS' (formatted as 'latitude,longitude').")
+st.markdown("2. Choose clustering algorithm and parameters.")
+st.markdown("3. Optionally, display the center of each cluster on the map.")
 
 # Sidebar settings
 with st.sidebar:
